@@ -76,7 +76,7 @@ if not WGET_AT:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = '20260114.01'
+VERSION = '20260114.02'
 USER_AGENT = 'Mozilla/5.0 (X11; Linux i686; rv:146.0) Gecko/20100101 Firefox/146.0'
 TRACKER_ID = 'maxmodels'
 TRACKER_HOST = 'legacy-api.arpa.li'
@@ -293,7 +293,7 @@ class WgetArgs(object):
 project = Project(
     title=TRACKER_ID,
     project_html='''
-        <img class="project-logo" alt="Project logo" src="https://wiki.archiveteam.org/images/b/bb/Retrospring-icon.png" height="50px" title=""/>
+        <img class="project-logo" alt="Project logo" src="https://wiki.archiveteam.org/images/0/05/Maxmodels_logo.jpeg" height="50px" title=""/>
         <h2>Maxmodels.pl <span class="links"><a href="https://www.maxmodels.pl/">Website</a> &middot; <a href="http://tracker.archiveteam.org/maxmodels/">Leaderboard</a> &middot; <a href="https://wiki.archiveteam.org/index.php/Maxmodels.pl">Wiki</a></span></h2>
         <p>Archiving Maxmodels.pl.</p>
     '''
