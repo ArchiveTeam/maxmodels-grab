@@ -151,7 +151,8 @@ allowed = function(url, parenturl)
     return true
   end
 
-  if string.match(url, "^https?://[^/]+/common/loginboxframe") then
+  if string.match(url, "^https?://[^/]+/common/loginboxframe")
+    or string.match(url, "^[^%?]+%?[^%?]+%?[^%?]+%?") then
     return false
   end
 
