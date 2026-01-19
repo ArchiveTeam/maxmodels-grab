@@ -472,6 +472,11 @@ wget.callbacks.httploop_result = function(url, err, http_stat)
         seen_200[url["url"]] = 0
       end
       seen_200[url["url"]] = seen_200[url["url"]] + 1
+      if seen_200[url["url"]] > 3 then
+        abort_item()
+        tries = 0
+        return wget.actions.EXIT
+      end
     end
     downloaded[url["url"]] = true
   end
